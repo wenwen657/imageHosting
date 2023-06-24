@@ -1,0 +1,239 @@
+name: congress
+description: congress.
+publish_to: none
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.28.0+148
+
+# lib version
+isar_version: &isar_version 3.1.0+1
+
+environment:
+  sdk: ">=3.0.0 <3.1.0"
+  flutter: ">=3.10.2"
+
+dependency_overrides:
+  dio: ^5.2.1+1
+  visibility_detector: ^0.4.0+2
+  intl: ^0.18.1
+  # wechat_assets_picker dep
+  extended_image: 8.0.0
+  collection: 1.17.1
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  kuril_components:
+    git:
+      url: git@g.echo.tech:mobile/kuril_components.git
+      #      ref: 'master'
+      ref: dev/lwj
+  tobias:
+    git:
+      url: 'https://github.com/lwj1994/tobias'
+      ref: 'dev'
+
+  plugin_platform_interface: ^2.1.4
+  isar: *isar_version
+  isar_flutter_libs: *isar_version # contains Isar Core
+  dio_smart_retry: ^5.0.0
+  diox_cookie_manager: ^2.1.0
+  scrollview_observer: ^1.14.0
+  retrofit: ^4.0.1
+  logger: ^1.4.0
+  flutter_oss_aliyun: ^6.2.5
+  dyno: ^0.0.4
+  isolate: ^2.1.1
+  provider: ^6.0.5
+  #  rfc_3339_date_time_serializer: 1.0.1
+  connectivity_plus: ^4.0.1
+  json_annotation: ^4.8.1
+  ana_page_loop: 1.0.1
+  shared_preferences: ^2.1.2
+  synchronized: ^3.1.0
+  ota_update: ^5.1.0
+  package_info_plus: ^4.0.2
+  device_info_plus: ^9.0.2
+  url_launcher: ^6.1.11
+  universal_html: ^2.2.2
+  universal_io: ^2.2.1
+  universal_web_image: ^0.0.3
+  dotted_decoration: 2.0.0
+  memory_info: 0.0.3
+  permission_handler:
+    git:
+      url: https://github.com/baseflow/flutter-permission-handler
+      path: permission_handler/
+      ref: master
+  fluttertoast: ^8.2.2
+  link_kit:
+    git:
+      url: 'https://github.com/lwj1994/link_kit.git'
+      ref: 'dev'
+  wechat_kit:
+    git:
+      url: 'https://github.com/lwj1994/wechat_kit.git'
+      ref: 'dev'
+  tencent_kit:
+    git:
+      url: 'https://github.com/lwj1994/tencent_kit.git'
+      ref: 'dev'
+  web_socket_client:
+    git:
+      url: https://github.com/lwj1994/web_socket_client
+      ref: dev
+  extended_nested_scroll_view:
+    git:
+      url: https://github.com/lwj1994/extended_nested_scroll_view.git
+      ref: c30ad9d0067c3c2b15993bd0a2acdd716f95ffc6
+  ubt:
+    git:
+      url: 'git@g.echo.tech:mobile/ubt-dart.git'
+      ref: 'master'
+  image_gallery_saver:
+    git:
+      url: git@github.com:lwj1994/image_gallery_saver.git
+      ref: dev
+  flutter_local_notifications:
+    git:
+      url: https://github.com/lwj1994/flutter_local_notifications
+      path: flutter_local_notifications/
+      ref: dev
+  common_utils: 2.1.0
+  decimal: 2.3.2
+  collection: ^1.17.1
+  card_swiper: 2.0.4
+  dart_date: ^1.2.2
+  encrypt: 5.0.1 #加密
+  app_settings: 4.2.0
+  image: ^4.0.17
+  expandable: 5.0.1
+  flutter_keyboard_visibility: ^5.4.1
+  flutter_staggered_grid_view: ^0.6.2
+  #share_extend: 2.0.0
+  numberpicker: ^2.1.2
+  cached_network_image: 3.2.3
+  #extended_image: ^7.0.2
+  extended_tabs: 4.1.0
+  enum_to_string: 2.0.1
+  intl: ^0.18.1
+  sqflite: ^2.2.8+4
+  adaptive_action_sheet: ^2.0.2
+  aliyun_oss_flutter: 1.0.5
+  crypto: ^3.0.3
+  flutter_easyloading: 3.0.5
+
+  flutter_timezone: ^1.0.6
+  flutter_easyrefresh: 2.2.2
+  easy_refresh: ^3.3.1
+  pull_to_refresh_notification: ^3.0.1
+  waterfall_flow: 3.0.2
+
+  jpush_flutter: ^2.4.4
+  flutter_svg: ^2.0.6
+  flutter_riverpod: ^2.3.6
+  riverpod_annotation: ^2.1.1
+  freezed: ^2.3.5
+  rxdart: 0.27.7
+  photo_view: 0.14.0
+  path_provider: ^2.0.15
+  auto_route: ^7.4.0
+  flutter_displaymode: ^0.6.0
+  wechat_assets_picker: ^8.5.0
+  sensors_analytics_flutter_plugin: ^2.4.0
+  # 高亮引导
+  bubble_showcase: 1.1.0
+  flutter_downloader: ^1.10.4
+  image_to_byte: 1.0.0
+  sticky_headers: 0.3.0+2
+  visibility_detector: ^0.4.0+2
+  focus_detector_v2: ^3.1.0+1
+  web_socket_channel: ^2.4.0
+  webview_flutter: 4.2.2
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  isar_generator: *isar_version
+  flutter_lints: 2.0.1
+  flutter_launcher_icons: ^0.13.1
+  build_runner: ^2.4.5
+  json_serializable: ^6.7.0
+  retrofit_generator: ^7.0.1
+  #  riverpod_generator: ^2.1.4
+  auto_route_generator: ^7.1.1
+  # flutter_ume: 1.1.1+1
+  vm_service: ^11.6.0
+  # flutter_ume_kit_ui: 1.0.0
+  # flutter_ume_kit_device: 1.0.0
+  #  flutter_ume_kit_perf: 1.0.0
+  #  flutter_ume_kit_show_code: 1.0.0
+  #flutter_ume_kit_console: 1.0.0
+  #flutter_ume_kit_dio: 1.0.0
+  curl_logger_dio_interceptor: ^1.0.0
+  # flutter_launcher_icons
+  # see https://github.com/fluttercommunity/flutter_launcher_icons
+
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "asset/icon/ic_launcher.png"
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - asset/images/
+    - asset/file/
+    - asset/icon/
+    - asset/images/2.0x/
+    - asset/images/3.0x/
+  #  - images/a_dot_burr.jpeg
+  #  - images/a_dot_ham.jpeg
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: asset/fonts/Roboto-Black.ttf
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
+
+tencent_kit:
+  app_id: 102026547
+  universal_link: https://linjieapp.com/qq_conn/102026547/
+
+wechat_kit:
+  app_id: wx3d8042915c8270fc
+  universal_link: https://linjieapp.com/
+
+
+tobias:
+  url_scheme: ap2021003124684082
